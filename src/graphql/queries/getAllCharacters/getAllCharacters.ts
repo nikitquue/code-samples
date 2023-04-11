@@ -1,12 +1,4 @@
-import { gql } from '@apollo/client';
-
-export const GET_ALL_ORGANISATIONS = gql`
-  query allOrganisations {
-    allOrganisations {
-      totalCount
-    }
-  }
-`;
+import { gql } from "@apollo/client";
 
 export const GET_ALL_CHARACTERS = gql`
   query allCharacters($offset: Int, $first: Int, $orderBy: String) {
